@@ -13,6 +13,7 @@
 		2387170D2ADA6A3A006CC5C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2387170C2ADA6A3A006CC5C9 /* Preview Assets.xcassets */; };
 		238717142ADA75EA006CC5C9 /* CircularTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238717132ADA75EA006CC5C9 /* CircularTabView.swift */; };
 		238717162ADA98AE006CC5C9 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238717152ADA98AE006CC5C9 /* PageView.swift */; };
+		238717182ADAD1EA006CC5C9 /* SlideTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238717172ADAD1EA006CC5C9 /* SlideTabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		2387170C2ADA6A3A006CC5C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		238717132ADA75EA006CC5C9 /* CircularTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTabView.swift; sourceTree = "<group>"; };
 		238717152ADA98AE006CC5C9 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		238717172ADAD1EA006CC5C9 /* SlideTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				238717052ADA6A3A006CC5C9 /* CircularTabViewApp.swift */,
 				238717072ADA6A3A006CC5C9 /* ContentView.swift */,
 				238717132ADA75EA006CC5C9 /* CircularTabView.swift */,
+				238717172ADAD1EA006CC5C9 /* SlideTabBarView.swift */,
 				238717152ADA98AE006CC5C9 /* PageView.swift */,
 				238717092ADA6A3A006CC5C9 /* Assets.xcassets */,
 				2387170B2ADA6A3A006CC5C9 /* Preview Content */,
@@ -145,6 +148,7 @@
 			files = (
 				238717082ADA6A3A006CC5C9 /* ContentView.swift in Sources */,
 				238717162ADA98AE006CC5C9 /* PageView.swift in Sources */,
+				238717182ADAD1EA006CC5C9 /* SlideTabBarView.swift in Sources */,
 				238717062ADA6A3A006CC5C9 /* CircularTabViewApp.swift in Sources */,
 				238717142ADA75EA006CC5C9 /* CircularTabView.swift in Sources */,
 			);

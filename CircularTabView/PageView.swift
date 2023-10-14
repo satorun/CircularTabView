@@ -13,20 +13,25 @@ struct PageView: View {
 
 
 struct PageViewProvider: CircularTabContentViewProvider {
-    var contentsData: [Color] = [
-        .blue,
-        .green,
-        .yellow,
-        .purple,
-        .red
+    
+    var contentsData: [(String, Color)] = [
+        ("Label Blue", .blue),
+        ("Label Green", .green),
+        ("Label Yellow", .yellow),
+        ("Label Purple", .purple),
+        ("Label Red", .red)
     ]
     
     var contentNumber: Int {
         contentsData.count
     }
     
+    func label(by index: Int) -> String {
+        contentsData[index].0
+    }
+    
     func contentView(by index: Int) -> some View {
-        PageView(color: contentsData[index])
+        PageView(color: contentsData[index].1)
     }
 }
 
