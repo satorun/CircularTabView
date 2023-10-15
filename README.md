@@ -2,6 +2,6 @@
 
 WIP
 
-<img src="https://github.com/satorun/CircularTabView/assets/1009747/2932e1c9-ea0e-4b5d-9156-d5332d6d18a8" width="500"/>
+<img src="https://github.com/satorun/CircularTabView/assets/1009747/4e6c9783-c806-434c-86bd-caf79434d664" width="400"/>
 
 
