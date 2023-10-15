@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CircularTabView: View {
+struct LinearTabView: View {
     @State var selectionForContent = 0
     @State var selection = 0
     
@@ -50,15 +50,6 @@ struct CircularTabView: View {
     }
 }
 
-protocol TabContentViewProvider {
-    associatedtype SomeView: View
-    
-    var contentNumber: Int { get }
-    func label(by index: Int) -> String
-    func contentView(by index: Int) -> SomeView
-}
-
-
 #Preview {
-    CircularTabView(viewProvider: PageViewProvider())
+    LinearTabView(viewProvider: PageViewProvider())
 }

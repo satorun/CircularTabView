@@ -11,7 +11,7 @@ struct SlideTabBarView: View {
     @Binding var selection: Int
     @Binding var indicatorPosition: CGFloat
     
-    var viewProvider: any CircularTabContentViewProvider
+    var viewProvider: any TabContentViewProvider
     
     var primaryColor: Color = .black
     var secondaryColor: Color = .gray

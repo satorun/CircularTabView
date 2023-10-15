@@ -12,7 +12,7 @@ struct PageView: View {
 }
 
 
-struct PageViewProvider: CircularTabContentViewProvider {
+struct PageViewProvider: TabContentViewProvider {
     
     var contentsData: [(String, Color)] = [
         ("Label Blue", .blue),

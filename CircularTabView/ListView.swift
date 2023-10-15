@@ -25,7 +25,7 @@ struct ListView: View {
     }
 }
 
-struct ListViewProvider: CircularTabContentViewProvider {
+struct ListViewProvider: TabContentViewProvider {
     
     var contentsData: [(String, Color)] = [
         ("Label Blue", .blue),

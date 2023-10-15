@@ -15,6 +15,7 @@
 		238717162ADA98AE006CC5C9 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238717152ADA98AE006CC5C9 /* PageView.swift */; };
 		238717182ADAD1EA006CC5C9 /* SlideTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238717172ADAD1EA006CC5C9 /* SlideTabBarView.swift */; };
 		2387171A2ADB8966006CC5C9 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238717192ADB8966006CC5C9 /* ListView.swift */; };
+		2387171C2ADB982D006CC5C9 /* LinearTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2387171B2ADB982D006CC5C9 /* LinearTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		238717152ADA98AE006CC5C9 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		238717172ADAD1EA006CC5C9 /* SlideTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTabBarView.swift; sourceTree = "<group>"; };
 		238717192ADB8966006CC5C9 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		2387171B2ADB982D006CC5C9 /* LinearTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				238717052ADA6A3A006CC5C9 /* CircularTabViewApp.swift */,
 				238717072ADA6A3A006CC5C9 /* ContentView.swift */,
 				238717132ADA75EA006CC5C9 /* CircularTabView.swift */,
+				2387171B2ADB982D006CC5C9 /* LinearTabView.swift */,
 				238717172ADAD1EA006CC5C9 /* SlideTabBarView.swift */,
 				238717152ADA98AE006CC5C9 /* PageView.swift */,
 				238717192ADB8966006CC5C9 /* ListView.swift */,
@@ -152,6 +155,7 @@
 				238717082ADA6A3A006CC5C9 /* ContentView.swift in Sources */,
 				238717162ADA98AE006CC5C9 /* PageView.swift in Sources */,
 				2387171A2ADB8966006CC5C9 /* ListView.swift in Sources */,
+				2387171C2ADB982D006CC5C9 /* LinearTabView.swift in Sources */,
 				238717182ADAD1EA006CC5C9 /* SlideTabBarView.swift in Sources */,
 				238717062ADA6A3A006CC5C9 /* CircularTabViewApp.swift in Sources */,
 				238717142ADA75EA006CC5C9 /* CircularTabView.swift in Sources */,
