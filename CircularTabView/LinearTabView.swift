@@ -13,22 +13,21 @@ struct LinearTabView: View {
             SlideTabBarView(
                 selection: $selection,
                 indicatorPosition: $indicatorPosition,
-                viewProvider: viewProvider)
+                viewProvider: viewProvider
+            )
                 .ignoresSafeArea(edges: .horizontal)
             TabView(selection: $selection) {
-                let index = index(by: selectionForContent)
-                
-                ForEach(0..<3) { i in
-                    AnyView(viewProvider.contentView(by: index[i]))
-                        .tag(index[i])
+                ForEach(0..<viewProvider.contentNumber, id: \.self) { i in
+                    AnyView(viewProvider.contentView(by: i))
+                        .tag(i)
                         .onDisappear {
                             selectionForContent = selection
                         }
                         .overlay {
                             GeometryReader { proxy in
                                 Color.clear
-                                    .onChange(of: proxy.frame(in: .global)) { oldValue, newValue in
-                                        guard index[i] == selection else { return }
+                                    .onChange(of: proxy.frame(in: .global)) { _, newValue in
+                                        guard i == selection else { return }
                                         indicatorPosition = (newValue.origin.x)/newValue.width
                                     }
                             }

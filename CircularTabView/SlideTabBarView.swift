@@ -15,6 +15,7 @@ struct SlideTabBarView: View {
     
     var primaryColor: Color = .black
     var secondaryColor: Color = .gray
+    var animated: Bool = false
     
     @State private var indicatorWidth: CGFloat = 0.0
     @State private var widthDic: [String: CGFloat] = [:]
@@ -27,7 +28,13 @@ struct SlideTabBarView: View {
                     HStack(spacing: .zero) {
                         ForEach(0..<viewProvider.contentNumber, id: \.self) { i in
                             Button {
-                                selection = i
+                                if animated {
+                                    withAnimation {
+                                        selection = i
+                                    }
+                                } else {
+                                    selection = i
+                                }
                             } label: {
                                 Text(viewProvider.label(by: i))
                                     .foregroundColor(selection == i ? primaryColor : secondaryColor)

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ListView: View {
     var color: Color
+    var resetScrollView: Bool = true
 
     var body: some View {
         ScrollViewReader { proxy in
@@ -16,16 +17,25 @@ struct ListView: View {
                 .listStyle(.plain)
             }
             .onAppear {
-                // When switching tabs, the scroll position of the previously viewed tab is retained.
-                // As a minimum countermeasure, reset it to return to the top.
-                proxy.scrollTo(0)
+                if resetScrollView {
+                    // In the case of CircularTabView:
+                    // When switching tabs, the scroll position of the previously viewed tab is retained.
+                    // As a minimum countermeasure, reset it to return to the top.
+                    //
+                    // In the case of LinearTabView:
+                    // The scroll position can be accurately maintained for about three tabs,
+                    // but when switching beyond that, the scroll position of another tab is reflected.
+                    // It is presumed that this occurs because internally, the View maintains the state
+                    // for about three tabs and that state is being applied.
+                    proxy.scrollTo(0)
+                }
             }
         }
-        
     }
 }
 
 struct ListViewProvider: TabContentViewProvider {
+    var resetScrollView: Bool = true
     
     var contentsData: [(String, Color)] = [
         ("Label Blue", .blue),
@@ -44,7 +54,7 @@ struct ListViewProvider: TabContentViewProvider {
     }
     
     func contentView(by index: Int) -> some View {
-        ListView(color: contentsData[index].1)
+        ListView(color: contentsData[index].1, resetScrollView: resetScrollView)
     }
     
     
